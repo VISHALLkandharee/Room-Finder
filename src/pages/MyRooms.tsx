@@ -1,13 +1,13 @@
-
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 import { useAuthContext } from '../context/auth'
 import  type { RoomType } from '../types/Room'
 import Navbar from '../components/Navbar'
 
  const MyRooms = () => {
-  const { user } = useAuthContext()
+  const navigate = useNavigate()
+  const { user, profile } = useAuthContext()
   const [rooms, setRooms] = useState<RoomType[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -49,6 +49,27 @@ import Navbar from '../components/Navbar'
       alert('❌ Error deleting room: ' + (error instanceof Error ? error.message : String(error)))
     }
   }
+
+  if (!profile?.is_admin) {
+    return (
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <div className="max-w-7xl mx-auto px-4 py-8 text-center">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg">
+            <h1 className="text-2xl font-bold mb-2">❌ Access Denied</h1>
+            <p className="mb-4">Only admin users can manage rooms.</p>
+            <button
+              onClick={() => navigate("/")}
+              className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors"
+            >
+              Go to Home
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
