@@ -19,6 +19,7 @@ const App = () => {
           { path: "/add-room", element: <AddRoom /> },
           { path: "/my-rooms", element: <MyRooms /> },
           { path: "/room/:id", element: <RoomDetails /> },
+          { path: "*", element: <NotFound /> },
         ],
       },
       { path: "*", element: <NotFound /> },
