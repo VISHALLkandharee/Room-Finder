@@ -5,7 +5,6 @@ import { supabase } from "../lib/supabase";
 type profile = {
     id: string;
     username?: string;
-    is_admin?: boolean;
 }
 
 interface AuthContextType {

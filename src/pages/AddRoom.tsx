@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 
 const AddRoom = () => {
   const navigate = useNavigate();
-  const { user, profile } = useAuthContext();
+  const { user } = useAuthContext();
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [images, setImages] = useState<string[]>([]);
@@ -119,26 +119,6 @@ const AddRoom = () => {
       setLoading(false);
     }
   };
-
-  if (!profile?.is_admin) {
-    return (
-      <div className="min-h-screen bg-gray-50">
-        <Navbar />
-        <div className="max-w-3xl mx-auto px-4 py-8 text-center">
-          <div className="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg">
-            <h1 className="text-2xl font-bold mb-2">❌ Access Denied</h1>
-            <p className="mb-4">Only admin users can add rooms.</p>
-            <button
-              onClick={() => navigate("/")}
-              className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors"
-            >
-              Go to Home
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gray-50">
