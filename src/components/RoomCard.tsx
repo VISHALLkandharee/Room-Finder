@@ -39,7 +39,7 @@ const RoomCard = ({room} : RoomCardProps) => {
           <div className="flex justify-between items-center mb-3">
             <span className="text-2xl font-bold text-blue-600">
               ₹{room.rent_price.toLocaleString()}
-              <span className="text-sm text-gray-500 font-normal">/month</span>
+              <span className="text-sm text-gray-500 font-normal">/night</span>
             </span>
           </div>
           
