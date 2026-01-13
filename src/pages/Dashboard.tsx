@@ -68,7 +68,7 @@ return (
             Find Your Perfect Room
           </h1>
           <p className="text-gray-600 text-lg">
-            Search a best room for your comfort Room at YOUr prefered location..
+            Search for a best room for your comfort Room at YOUr prefered location..
           </p>
         </div>
 
