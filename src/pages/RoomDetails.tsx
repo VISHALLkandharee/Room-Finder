@@ -19,7 +19,7 @@ export default function RoomDetails() {
       const { data, error } = await supabase
         .from('rooms')
         .select('*')
-        .eq('id', id)
+        .eq('id', Number(id))
         .single()
 
       if (error  ) throw error

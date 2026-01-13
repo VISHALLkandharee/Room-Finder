@@ -10,6 +10,6 @@ export interface RoomType{
     tenant_preference:'family' | 'bachelor' | 'girls' | 'working';
     contact_number:string;
     images : string[];
-    created_at:Date;
-    updated_at:Date;
+    created_at:string;
+    updated_at:string;
 }
