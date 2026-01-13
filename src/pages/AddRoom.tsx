@@ -120,6 +120,11 @@ const AddRoom = () => {
     }
   };
 
+  if (!user) {
+    navigate("/auth");
+    return null;
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
@@ -326,7 +331,6 @@ const AddRoom = () => {
       </div>
     </div>
   );
-}
-
+};
 
 export default AddRoom;
