@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
+import type { RoomType } from "../types/Room";
 
-const RoomCard = ({room}) => {
+interface RoomCardProps {
+  room: RoomType;
+}
+
+const RoomCard = ({room} : RoomCardProps) => {
   return (
    <Link to={`/room/${room.id}`}>
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-1">

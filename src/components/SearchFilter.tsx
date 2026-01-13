@@ -1,4 +1,20 @@
-export default function SearchFilters({ filters, setFilters }) {
+
+
+interface Filters {
+  location: string;
+  propertyType: string;
+  tenantPreference: string;
+  minPrice: string;
+  maxPrice: string;
+}
+
+interface SearchFilterProps {
+  filters: Filters;
+  setFilters: React.Dispatch<React.SetStateAction<Filters>>;
+}
+
+
+export default function SearchFilters({ filters, setFilters } : SearchFilterProps) {
   const handleClearFilters = () => {
     setFilters({
       location: '',
