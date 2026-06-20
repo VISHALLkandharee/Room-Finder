@@ -23,8 +23,14 @@ A lightweight web app to help users find and list rooms (or rentals) — built w
 ---
 
 ## Demo
+live url
+https://room-finder-chi.vercel.app/
 
-Add a link or screenshot here when you have a deployed instance (e.g. GitHub Pages, Netlify, Vercel).
+
+
+
+## live demo link
+https://www.loom.com/share/be56f18d323343658db0e2d416a685ba
 
 ---
 
