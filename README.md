@@ -240,8 +240,7 @@ If you plan to work on larger features, please open an issue first to discuss th
 ---
 
 ## License
-
-Specify a license for the project (e.g., MIT). If you don't have one yet, add a LICENSE file.
+MIT
 
 ---
 
@@ -249,8 +248,8 @@ Specify a license for the project (e.g., MIT). If you don't have one yet, add a 
 
 Maintainer: VISHALLkandharee (GitHub: @VISHALLkandharee)
 
-Add additional contact info or links to issues/discussions where contributors can ask questions.
+vishall.kandharee@gmail.com 
 
 ---
 
-Replace or extend any sections above with project-specific details (styles used, actual scripts, exact features) to keep the README accurate and helpful.
+
