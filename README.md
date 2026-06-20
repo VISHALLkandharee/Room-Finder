@@ -23,8 +23,14 @@ A lightweight web app to help users find and list rooms (or rentals) — built w
 ---
 
 ## Demo
+live url
+https://room-finder-chi.vercel.app/
 
-Add a link or screenshot here when you have a deployed instance (e.g. GitHub Pages, Netlify, Vercel).
+
+
+
+## live demo link
+https://www.loom.com/share/be56f18d323343658db0e2d416a685ba
 
 ---
 
@@ -234,8 +240,7 @@ If you plan to work on larger features, please open an issue first to discuss th
 ---
 
 ## License
-
-Specify a license for the project (e.g., MIT). If you don't have one yet, add a LICENSE file.
+MIT
 
 ---
 
@@ -243,8 +248,8 @@ Specify a license for the project (e.g., MIT). If you don't have one yet, add a 
 
 Maintainer: VISHALLkandharee (GitHub: @VISHALLkandharee)
 
-Add additional contact info or links to issues/discussions where contributors can ask questions.
+vishall.kandharee@gmail.com 
 
 ---
 
-Replace or extend any sections above with project-specific details (styles used, actual scripts, exact features) to keep the README accurate and helpful.
+
